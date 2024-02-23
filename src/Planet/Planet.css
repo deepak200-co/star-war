@@ -1,0 +1,98 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 3px #817777, 0 0 5px #47749e;
+  color: rgb(109, 204, 211);
+  font-family:'Times New Roman', Times, serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #95A5A6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.col {
+  flex-basis: calc(100% / 7);
+}
+
+.action-btns{
+  display: flex;
+}
+
+.action-btns button ,.edit-btn{
+  margin-right: 5px;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #47749e;
+  border-radius: 20px;
+}
+
+.pagi-btn{
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  background-color: #0d1d31;
+  cursor: pointer;
+}
+
+
+.action-btns button:last-child {
+  margin-right: 0;
+}
+
+@media all and (max-width: 767px) {
+  .table-header {
+    display: none;
+  }
+  .table-row {
+    flex-direction: column;
+  }
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}
+

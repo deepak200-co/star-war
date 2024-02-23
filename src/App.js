@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Planet from "./Planet/Planet";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="stars">
+        {Array.from({ length: 50 }, (_, index) => (
+          <div key={index} className="star"></div>
+        ))}
+      </div>
+      <Planet />
     </div>
   );
 }
