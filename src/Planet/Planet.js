@@ -33,6 +33,7 @@ function Planet() {
     return <div>Loading...</div>;
   }
 
+
   const handlePreviousPage = async () => {
     try {
       const response = await axios.get(`https://swapi.dev/api/planets/?page=${currentPage - 1}`);
